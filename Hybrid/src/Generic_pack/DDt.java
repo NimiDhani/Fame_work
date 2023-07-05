@@ -14,6 +14,7 @@ public class DDt {
 		String data=null;
 		try
 		{
+			//fetching file from excel
 			FileInputStream fis=new FileInputStream("./Excel/Book1.xlsx");
 		
 			Workbook book=WorkbookFactory.create(fis);
