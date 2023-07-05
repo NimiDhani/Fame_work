@@ -18,9 +18,12 @@ public class Base_Test implements Framework_const
 	{
 		System.setProperty(gecko_key, gecko_value);
 		 driver=new FirefoxDriver();
+		 //launch the browser
 		 driver.manage().window().maximize();
 		 driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		 //to enter the url
 		 driver.get(base_url);
+	
 	}
 	
 	@AfterMethod
