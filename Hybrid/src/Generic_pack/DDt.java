@@ -17,8 +17,8 @@ public class DDt {
 			//fetching file path
 			FileInputStream fis=new FileInputStream("./Excel/Book1.xlsx");
 		
-			Workbook book=WorkbookFactory.create(fis);//fetch the file
-			Sheet s1 = book.getSheet(sh);
+			Workbook book=WorkbookFactory.create(fis);//fetch specific file
+			Sheet s1 = book.getSheet(sh);//which sheet 
 			Row r1 = s1.getRow(r);
 			Cell c1 = r1.getCell(c);
 			 data = c1.toString();
