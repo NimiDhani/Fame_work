@@ -14,10 +14,10 @@ public class DDt {
 		String data=null;
 		try
 		{
-			//fetching file from excel
+			//fetching file path
 			FileInputStream fis=new FileInputStream("./Excel/Book1.xlsx");
 		
-			Workbook book=WorkbookFactory.create(fis);
+			Workbook book=WorkbookFactory.create(fis);//fetch the file
 			Sheet s1 = book.getSheet(sh);
 			Row r1 = s1.getRow(r);
 			Cell c1 = r1.getCell(c);
